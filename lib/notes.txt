@@ -1,0 +1,151 @@
+21.027763 latitude
+105.834160 longitude
+
+address Ha Noi
+
+convert K to C K= C+ 273.15
+
+https://api.openweathermap.org/data/2.5/weather?lat=21.027763&lon=105.834160&lang=vi&appid=4f7d7496aa4484f29d904b86b01ef8bf
+
+https://api.openweathermap.org/data/2.5/weather/hourly?lat=21.027763&lon=105.834160&lang=vi&appid=4f7d7496aa4484f29d904b86b01ef8bf
+
+
+4f7d7496aa4484f29d904b86b01ef8bf
+
+
+ <--[
+        {
+            "dt": 1554051600,
+            "main": {
+                "temp": 281.5,
+                "temp_min": 281.5,
+                "temp_max": 281.5,
+                "pressure": 1021.88,
+                "sea_level": 1021.88,
+                "grnd_level": 963.288,
+                "humidity": 100.34,
+                "temp_kf": 0.1
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 100.5
+            },
+            "wind": {
+                "speed": 5,
+                "deg": 7.624,
+                "gust": 8.46
+            },
+            "rain": {},
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2019-03-31 17:00:00"
+        },
+        {
+            "dt": 1553709600,
+            "main": {
+                "temp": 278.76,
+                "temp_min": 278.76,
+                "temp_max": 279.558,
+                "pressure": 1031.934,
+                "sea_level": 1031.934,
+                "grnd_level": 971.745,
+                "humidity": 100.9,
+                "temp_kf": 0.8
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "broken clouds",
+                    "icon": "04n"
+                }
+            ],
+            "clouds": {
+                "all": 77.5
+            },
+            "wind": {
+                "speed": 1.6,
+                "deg": 40.932,
+                "gust": 7.9
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2019-03-27 18:00:00"
+        },
+        {
+            "dt": 1553713200,
+            "main": {
+                "temp": 278.4,
+                "temp_min": 278.4,
+                "temp_max": 279,
+                "pressure": 1033.061,
+                "sea_level": 1033.061,
+                "grnd_level": 972.411,
+                "humidity": 100.2,
+                "temp_kf": 0.6
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "few clouds",
+                    "icon": "02n"
+                }
+            ],
+            "clouds": {
+                "all": 24.2
+            },
+            "wind": {
+                "speed": 1.49,
+                "deg": 46.416,
+                "gust": 5.46
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2019-03-27 19:00:00"
+        },
+        {
+            "dt": 1554051600,
+            "main": {
+                "temp": 281.5,
+                "temp_min": 281.5,
+                "temp_max": 281.5,
+                "pressure": 1021.88,
+                "sea_level": 1021.88,
+                "grnd_level": 963.288,
+                "humidity": 100.1,
+                "temp_kf": 0.6
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 100.1
+            },
+            "wind": {
+                "speed": 5.2,
+                "deg": 7.624,
+                "gust": 8.46
+            },
+            "rain": {},
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2019-03-31 20:00:00"
+        }
+    ]

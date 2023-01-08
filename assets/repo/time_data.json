@@ -1,0 +1,128 @@
+[
+    {
+        "main": {
+            "temp": 294.5,
+            "temp_min": 281.5,
+            "temp_max": 281.5,
+            "pressure": 1021.88,
+            "sea_level": 1021.88,
+            "grnd_level": 963.288,
+            "humidity": 100.34,
+            "temp_kf": 0.1
+        },
+        "weather": [
+            {
+                "id": 804,
+                "main": "Clouds",
+                "description": "overcast clouds",
+                "icon": "04d"
+            }
+        ],
+        "dt_txt": "2019-03-31 17:00:00"
+    },
+    {
+        "main": {
+            "temp": 300.5,
+            "temp_min": 281.5,
+            "temp_max": 281.5,
+            "pressure": 1021.88,
+            "sea_level": 1021.88,
+            "grnd_level": 963.288,
+            "humidity": 100.34,
+            "temp_kf": 0.1
+        },
+        "weather": [
+            {
+                "id": 804,
+                "main": "Clouds",
+                "description": "overcast clouds",
+                "icon": "04d"
+            }
+        ],
+        "dt_txt": "2019-03-31 18:00:00"
+    },
+    {
+        "main": {
+            "temp": 300.5,
+            "temp_min": 281.5,
+            "temp_max": 281.5,
+            "pressure": 1021.88,
+            "sea_level": 1021.88,
+            "grnd_level": 963.288,
+            "humidity": 100.34,
+            "temp_kf": 0.1
+        },
+        "weather": [
+            {
+                "id": 804,
+                "main": "Clouds",
+                "description": "overcast clouds",
+                "icon": "04d"
+            }
+        ],
+        "dt_txt": "2019-03-31 19:00:00"
+    },
+    {
+        "main": {
+            "temp": 294.5,
+            "temp_min": 281.5,
+            "temp_max": 281.5,
+            "pressure": 1021.88,
+            "sea_level": 1021.88,
+            "grnd_level": 963.288,
+            "humidity": 100.34,
+            "temp_kf": 0.1
+        },
+        "weather": [
+            {
+                "id": 804,
+                "main": "Clouds",
+                "description": "overcast clouds",
+                "icon": "04d"
+            }
+        ],
+        "dt_txt": "2019-03-31 20:00:00"
+    },
+    {
+        "main": {
+            "temp": 270.5,
+            "temp_min": 281.5,
+            "temp_max": 281.5,
+            "pressure": 1021.88,
+            "sea_level": 1021.88,
+            "grnd_level": 963.288,
+            "humidity": 100.34,
+            "temp_kf": 0.1
+        },
+        "weather": [
+            {
+                "id": 804,
+                "main": "Clouds",
+                "description": "overcast clouds",
+                "icon": "04d"
+            }
+        ],
+        "dt_txt": "2019-03-31 21:00:00"
+    },
+    {
+        "main": {
+            "temp": 298.5,
+            "temp_min": 281.5,
+            "temp_max": 281.5,
+            "pressure": 1021.88,
+            "sea_level": 1021.88,
+            "grnd_level": 963.288,
+            "humidity": 100.34,
+            "temp_kf": 0.1
+        },
+        "weather": [
+            {
+                "id": 804,
+                "main": "Clouds",
+                "description": "overcast clouds",
+                "icon": "04d"
+            }
+        ],
+        "dt_txt": "2019-03-31 22:00:00"
+    }
+]

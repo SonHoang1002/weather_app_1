@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": 105.8342,
+        "lat": 21.0278
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 294.14,
+        "feels_like": 293.99,
+        "temp_min": 294.14,
+        "temp_max": 294.14,
+        "pressure": 1020,
+        "humidity": 65,
+        "sea_level": 1020,
+        "grnd_level": 1019
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 0.69,
+        "deg": 2,
+        "gust": 1.23
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1672910130,
+    "sys": {
+        "type": 1,
+        "id": 9308,
+        "country": "VN",
+        "sunrise": 1672875278,
+        "sunset": 1672914509
+    },
+    "timezone": 25200,
+    "id": 1581130,
+    "name": "Hanoi",
+    "cod": 200
+}

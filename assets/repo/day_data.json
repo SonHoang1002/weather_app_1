@@ -1,0 +1,358 @@
+{
+  "city": {
+    "id": 2643743,
+    "name": "London",
+    "coord": {
+      "lon": -0.1257,
+      "lat": 51.5085
+    },
+    "country": "GB",
+    "population": 1000000,
+    "timezone": 3600
+  },
+  "cod": "200",
+  "message": 0.0610271,
+  "cnt": 7,
+  "list": [
+    {
+      "dt": 1625140800,
+      "sunrise": 1625111254,
+      "sunset": 1625170853,
+      "temp": {
+        "day": 19.55,
+        "min": 9.6,
+        "max": 30.5,
+        "night": 16.09,
+        "eve": 19.47,
+        "morn": 13.33
+      },
+      "feels_like": {
+        "day": 19.15,
+        "night": 15.43,
+        "eve": 18.93,
+        "morn": 12.7
+      },
+      "pressure": 1018,
+      "humidity": 61,
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "speed": 2.71,
+      "deg": 335,
+      "gust": 3.8,
+      "clouds": 69,
+      "pop": 0.15
+    },
+    {
+      "dt": 1625140800,
+      "sunrise": 1625111254,
+      "sunset": 1625170853,
+      "temp": {
+        "day": 19.55,
+        "min": 8.96,
+        "max": 35.77,
+        "night": 16.09,
+        "eve": 19.47,
+        "morn": 13.33
+      },
+      "feels_like": {
+        "day": 19.15,
+        "night": 15.43,
+        "eve": 18.93,
+        "morn": 12.7
+      },
+      "pressure": 1018,
+      "humidity": 61,
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "speed": 2.71,
+      "deg": 335,
+      "gust": 3.8,
+      "clouds": 69,
+      "pop": 0.15
+    },
+    {
+      "dt": 1625140800,
+      "sunrise": 1625111254,
+      "sunset": 1625170853,
+      "temp": {
+        "day": 19.55,
+        "min": 15.96,
+        "max": 26.77,
+        "night": 16.09,
+        "eve": 19.47,
+        "morn": 13.33
+      },
+      "feels_like": {
+        "day": 19.15,
+        "night": 15.43,
+        "eve": 18.93,
+        "morn": 12.7
+      },
+      "pressure": 1018,
+      "humidity": 61,
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "speed": 2.71,
+      "deg": 335,
+      "gust": 3.8,
+      "clouds": 69,
+      "pop": 0.15
+    },
+    {
+      "dt": 1625140800,
+      "sunrise": 1625111254,
+      "sunset": 1625170853,
+      "temp": {
+        "day": 19.55,
+        "min": 23.96,
+        "max": 34.77,
+        "night": 16.09,
+        "eve": 19.47,
+        "morn": 13.33
+      },
+      "feels_like": {
+        "day": 19.15,
+        "night": 15.43,
+        "eve": 18.93,
+        "morn": 12.7
+      },
+      "pressure": 1018,
+      "humidity": 61,
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "speed": 2.71,
+      "deg": 335,
+      "gust": 3.8,
+      "clouds": 69,
+      "pop": 0.15
+    },
+    {
+      "dt": 1625140800,
+      "sunrise": 1625111254,
+      "sunset": 1625170853,
+      "temp": {
+        "day": 19.55,
+        "min": 12.96,
+        "max": 30.77,
+        "night": 16.09,
+        "eve": 19.47,
+        "morn": 13.33
+      },
+      "feels_like": {
+        "day": 19.15,
+        "night": 15.43,
+        "eve": 18.93,
+        "morn": 12.7
+      },
+      "pressure": 1018,
+      "humidity": 61,
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "speed": 2.71,
+      "deg": 335,
+      "gust": 3.8,
+      "clouds": 69,
+      "pop": 0.15
+    },
+    {
+      "dt": 1625140800,
+      "sunrise": 1625111254,
+      "sunset": 1625170853,
+      "temp": {
+        "day": 19.55,
+        "min": 6.96,
+        "max": 23.77,
+        "night": 16.09,
+        "eve": 19.47,
+        "morn": 13.33
+      },
+      "feels_like": {
+        "day": 19.15,
+        "night": 15.43,
+        "eve": 18.93,
+        "morn": 12.7
+      },
+      "pressure": 1018,
+      "humidity": 61,
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "speed": 2.71,
+      "deg": 335,
+      "gust": 3.8,
+      "clouds": 69,
+      "pop": 0.15
+    },
+    {
+      "dt": 1625140800,
+      "sunrise": 1625111254,
+      "sunset": 1625170853,
+      "temp": {
+        "day": 19.55,
+        "min": 20.96,
+        "max": 39.77,
+        "night": 16.09,
+        "eve": 19.47,
+        "morn": 13.33
+      },
+      "feels_like": {
+        "day": 19.15,
+        "night": 15.43,
+        "eve": 18.93,
+        "morn": 12.7
+      },
+      "pressure": 1018,
+      "humidity": 61,
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "speed": 2.71,
+      "deg": 335,
+      "gust": 3.8,
+      "clouds": 69,
+      "pop": 0.15
+    },
+    {
+      "dt": 1625140800,
+      "sunrise": 1625111254,
+      "sunset": 1625170853,
+      "temp": {
+        "day": 19.55,
+        "min": 7.96,
+        "max": 34.77,
+        "night": 16.09,
+        "eve": 19.47,
+        "morn": 13.33
+      },
+      "feels_like": {
+        "day": 19.15,
+        "night": 15.43,
+        "eve": 18.93,
+        "morn": 12.7
+      },
+      "pressure": 1018,
+      "humidity": 61,
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "speed": 2.71,
+      "deg": 335,
+      "gust": 3.8,
+      "clouds": 69,
+      "pop": 0.15
+    },
+    {
+      "dt": 1625140800,
+      "sunrise": 1625111254,
+      "sunset": 1625170853,
+      "temp": {
+        "day": 19.55,
+        "min": 11.96,
+        "max": 30.77,
+        "night": 16.09,
+        "eve": 19.47,
+        "morn": 13.33
+      },
+      "feels_like": {
+        "day": 19.15,
+        "night": 15.43,
+        "eve": 18.93,
+        "morn": 12.7
+      },
+      "pressure": 1018,
+      "humidity": 61,
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "speed": 2.71,
+      "deg": 335,
+      "gust": 3.8,
+      "clouds": 69,
+      "pop": 0.15
+    },
+    {
+      "dt": 1625140800,
+      "sunrise": 1625111254,
+      "sunset": 1625170853,
+      "temp": {
+        "day": 19.55,
+        "min": 6.96,
+        "max": 29.77,
+        "night": 16.09,
+        "eve": 19.47,
+        "morn": 13.33
+      },
+      "feels_like": {
+        "day": 19.15,
+        "night": 15.43,
+        "eve": 18.93,
+        "morn": 12.7
+      },
+      "pressure": 1018,
+      "humidity": 61,
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "speed": 2.71,
+      "deg": 335,
+      "gust": 3.8,
+      "clouds": 69,
+      "pop": 0.15
+    }
+  ]
+}
