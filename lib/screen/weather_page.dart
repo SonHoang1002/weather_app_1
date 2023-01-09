@@ -40,22 +40,31 @@ class _WeatherPageState extends State<WeatherPage> {
   @override
   void initState() {
     super.initState();
-     Future<int> a = getDataTime();
+    nextDayModel = NextDayModel();
+    timeModel = TimeModel();
+    Future<int> a = getDataTime();
+    if (nextDayModel.list?.length == 0) {
+      Future<int> b = getDataTime();
+      print(nextDayModel.cod);
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     listOfTime = ["Bây giờ"];
     listOfDay = ["Hôm nay"];
-   
+
     var b = setMinAndMaxTempature();
+
     _buildSixNextDay();
     return Scaffold(
         backgroundColor: Colors.black,
         body: FutureBuilder(
-          future: Future.value(timeModel),
+          future: getDataTime(),
           builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
+            if (snapshot.connectionState == ConnectionState.waiting &&
+                nextDayModel == null &&
+                timeModel == null) {
               return Center(
                 child: CircularProgressIndicator(),
               );
@@ -89,12 +98,9 @@ class _WeatherPageState extends State<WeatherPage> {
                           padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                           child: Center(
                             child: Text(
-                              (timeModel.main!.temp! - K_to_C)
+                              ((timeModel?.main?.temp ?? 294) - K_to_C)
                                       .ceil()
                                       .toString() +
-                                  // (snapshot.data!.main!.temp! - K_to_C)
-                                  //         .ceil()
-                                  //         .toString() +
                                   "°",
                               style: TextStyle(
                                   fontSize: 75,
@@ -114,7 +120,8 @@ class _WeatherPageState extends State<WeatherPage> {
                           Container(
                             margin: EdgeInsets.fromLTRB(15, 15, 15, 10),
                             child: Text(
-                              timeModel.weather![0].description.toString(),
+                              // timeModel.weather![0].description.toString(),
+                              timeModel.weather?[0].description.toString() ?? "20",
                               style: TextStyle(
                                   // fontSize: 40,
                                   // fontWeight:
@@ -172,12 +179,14 @@ class _WeatherPageState extends State<WeatherPage> {
                                         height: 18,
                                         width: 18,
                                         child: Image.asset(
-                                            ConstantVariable.pathImage +
-                                                "calendar_icon.png")),
+                                          ConstantVariable.pathImage +
+                                              "calendar_icon.png",
+                                          color: Colors.white,
+                                        )),
                                     Text(
                                       "DỰ BÁO 10 NGÀY",
                                       style: TextStyle(
-                                        color: Colors.grey[400],
+                                        color: Colors.white,
                                       ),
                                     ),
                                   ]),
@@ -187,20 +196,31 @@ class _WeatherPageState extends State<WeatherPage> {
                               color: Colors.white,
                             ),
                             Container(
-                              height: 310,
-                              child: ListView.builder(
-                                  padding: EdgeInsets.zero,
-                                  itemCount: nextDayModel.list!.length,
-                                  itemBuilder: ((context, index) {
-                                    return WeatherDay(
-                                        day: listOfDay[index],
-                                        darkTemp: nextDayModel
-                                            .list![index].temp!.min!
-                                            .ceil(),
-                                        lightTemp: nextDayModel
-                                            .list![index].temp!.max!
-                                            .ceil());
-                                  })),
+                              child:
+                                  FutureBuilder(builder: ((context, snapshot) {
+                                if (snapshot.connectionState ==
+                                    ConnectionState.waiting) {
+                                  return Center(
+                                    child: CircularProgressIndicator(),
+                                  );
+                                }
+                                return Container(
+                                  height: 310,
+                                  child: ListView.builder(
+                                      padding: EdgeInsets.zero,
+                                      itemCount: nextDayModel.list!.length,
+                                      itemBuilder: ((context, index) {
+                                        return WeatherDay(
+                                            day: listOfDay[index],
+                                            darkTemp: nextDayModel
+                                                .list![index].temp!.min!
+                                                .ceil(),
+                                            lightTemp: nextDayModel
+                                                .list![index].temp!.max!
+                                                .ceil());
+                                      })),
+                                );
+                              })),
                             )
                           ],
                         ),
@@ -294,39 +314,34 @@ class _WeatherPageState extends State<WeatherPage> {
   }
 
   Future<int> getDataTime() async {
-    final currentTemp = await getCurrentTemparature();
-    final nextTime = await getNextTimeData();
-    final nextDay = await getNextDayData();
-
-    setState(() {
-      timeModel = currentTemp;
-      nextTimeModel = nextTime;
-      nextDayModel = nextDay;
-    });
+    timeModel = await getCurrentTemparature();
+    nextTimeModel = await getNextTimeData();
+    nextDayModel = await getNextDayData();
+    setState(() {});
     return Future.value(1);
   }
 
   int setMinAndMaxTempature() {
-    // final tempGetxController = Get.put(MinAndMaxTemparture());
-    // var min = tempGetxController.min.value;
-    // var max = tempGetxController.max.value;
-    int min = nextDayModel.list![0].temp!.min!.ceil();
-    int max = nextDayModel.list![0].temp!.max!.ceil();
+    if (nextDayModel?.list?.length == 0 || nextDayModel.list == null) {
+      Future<int> abc = getDataTime();
+    } else {
+      int min = nextDayModel.list![0].temp!.min!.ceil();
+      int max = nextDayModel.list![0].temp!.max!.ceil();
 
-    for (int i = 0; i < nextDayModel.list!.length; i++) {
-      if (nextDayModel.list![i].temp!.max!.ceil() > max) {
-        max = nextDayModel.list![i].temp!.max!.ceil();
+      for (int i = 0; i < nextDayModel.list!.length; i++) {
+        if (nextDayModel.list![i].temp!.max!.ceil() > max) {
+          max = nextDayModel.list![i].temp!.max!.ceil();
+        }
+        if (nextDayModel.list![i].temp!.min!.ceil() < min) {
+          min = nextDayModel.list![i].temp!.min!.ceil();
+        }
       }
-      if (nextDayModel.list![i].temp!.min!.ceil() < min) {
-        min = nextDayModel.list![i].temp!.min!.ceil();
-      }
+      MinAndMaxTemparture.max = max;
+      MinAndMaxTemparture.min = min;
+      // print(MinAndMaxTemparture.min);
+      // print(MinAndMaxTemparture.max);
     }
-    // print(min);
-    // print(max);
-    MinAndMaxTemparture.max = max;
-    MinAndMaxTemparture.min = min;
-    print(MinAndMaxTemparture.min);
-    print(MinAndMaxTemparture.max);
+
     return 1;
   }
 }
