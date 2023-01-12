@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:waether_app/business/getx_temparture.dart';
 import 'package:waether_app/general/constant_var.dart';
+import 'package:waether_app/repository/min_max_temp.dart';
 
+const linearGradient =
+    LinearGradient(colors: [Colors.green, Colors.yellow, Colors.red]);
 
-const linearGradient =  LinearGradient(
-                          colors: [Colors.green, Colors.yellow, Colors.red]);
 class WeatherDay extends StatelessWidget {
   final String day;
   final int darkTemp;
@@ -54,8 +54,7 @@ class WeatherDay extends StatelessWidget {
                 Container(
                   width: 70,
                   height: 4,
-                  decoration: BoxDecoration(
-                      gradient: linearGradient),
+                  decoration: BoxDecoration(gradient: linearGradient),
                 ),
                 Row(
                   children: [
